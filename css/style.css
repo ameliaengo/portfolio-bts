@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #050e61f6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(59, 60, 65, 0.9);
+    border-bottom: 5px solid #5973a1;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    color: #e2e6ec;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #eef0f3;
+    font-weight: 700;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    height: 100vh;
+    background-image: url("../img/fond.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 80px;
+    position: relative;
+}
+
+/* Overlay sombre */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Texte au-dessus de l’image */
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== TEXTE ===== */
+.hero h1 {
+    font-size: 48px;
+    color: #0e5cc9;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* ===== BOUTON ===== */
+.btn {
+    padding: 12px 30px;
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+}
+
