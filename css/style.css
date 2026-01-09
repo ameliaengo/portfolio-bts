@@ -9,7 +9,7 @@ body {
     background-color: #050e61f6;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
@@ -18,14 +18,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    background: rgba(59, 60, 65, 0.9);
-    border-bottom: 5px solid #5973a1;
+    background: rgba(59, 60, 65, 0);
     z-index: 100;
 }
 
 .logo {
-    font-size: 22px;
-    color: #e2e6ec;
+    font-size: 20px;
+    color: #5eb857;
 }
 
 .nav-link {
@@ -36,14 +35,13 @@ body {
 
 .nav-link a {
     text-decoration: none;
-    color: #eef0f3;
+    color: #5eb857;
     font-weight: 700;
 }
 
-/* ===== HERO SECTION ===== */
+/* HERO */
 .hero {
     height: 100vh;
-    background-image: url("../img/fond.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +56,6 @@ body {
     position: relative;
 }
 
-/* Overlay sombre */
 .hero::before {
     content: "";
     position: absolute;
@@ -66,7 +63,6 @@ body {
     background: rgba(0, 0, 0, 0.5);
 }
 
-/* Texte au-dessus de l’image */
 .hero h1,
 .hero p,
 .hero .btn {
@@ -74,7 +70,6 @@ body {
     z-index: 1;
 }
 
-/* ===== TEXTE ===== */
 .hero h1 {
     font-size: 48px;
     color: #0e5cc9;
@@ -84,22 +79,65 @@ body {
 .hero p {
     font-size: 18px;
     color: #94a3b8;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
-/* ===== BOUTON ===== */
+/* BOUTON */
 .btn {
-    padding: 12px 30px;
+    padding: 16px 50px;
     background: #38bdf8;
-    color: #0f172a;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.6s;
+    border: none;
 }
 
 .btn:hover {
     background: #0ea5e9;
 }
 
+/* FOOTER */
+.motivation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: rgba(22, 31, 55, 0.704);
+    border-bottom: 5px solid #5973a1;
+}
+
+.nav-links .img {
+    width: 40px;
+    height: 40px;
+    margin: 0 1rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.motivation .bas {
+    color: #5eb857;
+}
+
+.motivation .coucou {
+    color: #ffffff;
+}
+
+.motivation .caca {
+    color: #f9f2f9;
+}
+.her {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.her p {
+    font-size: 18px;
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
