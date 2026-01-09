@@ -141,3 +141,88 @@ body {
     color: #94a3b8;
     margin-bottom: 15px;
 }
+.hero-content {
+   display: flex;           
+    flex-direction: row;    
+    justify-content: flex-end; 
+    align-items: center;     /
+    gap : 50px;              
+    max-width: 1200px;
+}
+.texte {
+    max-width: 600px;         
+    background: rgba(13, 12, 12, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+}
+.photo-colonne .img {
+    width: 280px;  
+    height: 180px;  
+    object-fit: cover;
+    border-radius: 10px;
+}
+.photo-colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+.hera {
+    min-height: 100vh; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background-position: center;
+}
+.projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.hera h3 {
+    color: #7de461;
+    font-size: 18px;
+}
+.hera img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.btn-projet {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #38bdf8;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 1.5s;
+}
+.ima {
+    min-height: 100vh;         
+    display: flex;
+    justify-content: center;    
+    align-items: center;     
+    gap: 60px;
+    padding: 120px 80px;
+}
+.ima-img {
+    width: 420px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.imat {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+}
